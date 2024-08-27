@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador Challenge</title>
+    <!-- Estilos Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <!-- Inicio del header -->
+    <header class="header">
+        <img src="./assets/img/Logo.png" alt="Logo Alura">
+    </header>
+
+    <!-- Inicio del main -->
+    <main class="container">
+        <!-- Section ingresar texto -->
+         <div class="container__area">
+             <section class="container__area__section">
+                 <textarea name="txtarea" class="container__area__txtarea" id="txtarea" cols="50" rows="10" placeholder="Ingresa el texto aquí"></textarea>
+             </section>
+             <!-- Section botones -->
+             <section class="container__lower">
+                <p class="">
+                    <img src="./assets/img/bi_exclamation-circle-fill.png">Solo letras minúsculas y sin acentos.
+                </p>
+                <div class="container__lower__button">
+                    <button onclick="encriptar()" class="button_enc">Encriptar</button>
+                    <button onclick="desencriptar()" class="button_desc">Desencriptar</button>
+                </div>
+             </section>
+         </div>
+
+         <!-- Inicio del aside - Resultado -->
+         <aside class="container__result">
+             
+             <img src="./assets/img/Muñeco.png" alt="No se han encontrado resultados" class="container__result__img" id="muñeco">
+             <div>
+                 <h2 id="titulo-mensaje" class="container__result__titulo">Ningún mensaje fue encontrado</h2>
+                 <p id="parrafo" class="container__result__parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
+             </div>
+     
+         </aside>
+
+    </main>
+
+    <!-- Inicio del footer -->
+    <footer class="footer">
+
+        <p>Todos los derechos reservados a VitaDev - Pablo Perez Lee</p>
+
+    </footer>
+
+</body>
+<!-- Código Javascript -->
+<script src="./index.js"></script>
+</html>
